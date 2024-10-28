@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoxNet</title>
+    <link rel="stylesheet" href="../css/styles_index.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-container">
+            <a href="../html/index.html">
+                <img src="../imagens/logo/fox1_resize3.png" alt="Logo da Loja" class="logo-img">
+            </a>
+            <span class="logo-text" style="font-size: 42px;">FoxNet</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="agdasima-regular">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        DEPARTAMENTOS
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Processador</a></li>
+                        <li><a href="#">Gabinete</a></li>
+                        <li><a href="#">Memória RAM</a></li>
+                        <li><a href="#">HD e SSD</a></li>
+                        <li><a href="#">Placa Mãe</a></li>
+                        <li><a href="#">Placa de Vídeo</a></li>
+                        <li><a href="#">Coolers</a></li>
+                        <li><a href="#">Fontes</a></li>
+                        <li><a href="#">Monitor</a></li>
+                        <li><a href="#">Periféricos</a></li>
+                        <!-- Adicione mais itens conforme necessário -->
+                    </ul>
+                </li>
+                <li class="agdasima-regular"><a class="color-change" href="#">PROMOÇÕES</a></li>
+                <li class="agdasima-regular"><a class="color-change" href="#">HARDWARE</a></li>
+                <li class="agdasima-regular"><a class="color-change" href="#">NOTEBOOKS</a></li>
+                <li class="agdasima-regular"><a class="color-change" href="#">ATENDIMENTO</a></li>
+            </ul>
+        </nav>
+        <div class="search-login">
+            <input type="text" class="agdasima-regular" placeholder="Pesquise seu produto">
+            <a href="../html/login.html" class="agdasima-regular">Login/Cadastro</a>
+            <a href="#" class="cart agdasima-regular">Carrinho</a>
+        </div>
+    </header>
+    
+    <!-- Seção Hero / Banner -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../imagens/hero_banner/artic_cooler.jpg" alt="Imagem 1">
+                <img src="../imagens/hero_banner/note_aero.jpg" alt="Imagem 2">
+                <img src="../imagens/hero_banner/amd_ryzen.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-indicators">
+                <button onclick="showImage(0)" class="active"></button>
+                <button onclick="showImage(1)"></button>
+                <button onclick="showImage(2)"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Seção de Produtos -->
+    <section class="products">
+        <h2 class="agdasima-regular" style="font-size: 30px; color: #F94318;">Lançamentos e Produtos</h2>
+        <!--Fileira 1-->
+        <div class="product-grid">
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Acer Nitro V</div>
+                <img src="../imagens/cards_home_lancamentos/notebook/acer_nitro_v.png" alt="Notebook">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">Acer Nitro V Processador: Intel Core i5-13420H |
+                    8 GB RAM DDR5 | 512 GB SSD | RTX 4050 GDDR6 | Windows 11<h3>
+                    <span class="old-price agdasima-regular">R$ 5.799,00</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">10% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 5.299,00 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 530,00 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+            <!-- Adicione mais cards de produtos conforme necessário -->
+    
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Intel Core i5 12400F</div>
+                <img src="../imagens/cards_home_lancamentos/processador/processador-intel-core-i5-12400f-2-5ghz-4-4ghz-turbo--12--gera-o--6-cores--12-t-tbmgqq3ew5.png" alt="Processador">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">Intel Core i5 12400F: 2.5GHz (4.4GHz Turbo) |
+                         12ª Geração | 6-Cores 12-Threads | LGA 1700 | BX8071512400F<h3>
+                    <span class="old-price agdasima-regular">R$ 1.289,00</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 669,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 65,68 sem juros </span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+          <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Kingston FURY Beast</div>
+                <img src="../imagens/cards_home_lancamentos/memoria/memoria-ddr5-kingston-fury-beast-8gb-5600mhz-black-kf556c40bb-8_163406.jpg" alt="Memoria">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">RAM DDR5 Kingston FURY Beast: 8GB | 
+                        5600MHz| Black| KF556C40BB-8<h3>
+                    <span class="old-price agdasima-regular">R$ 409,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ R$ 237,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 23,32 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-badge">Mais Vendidos</div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <a href="../html/produtos_pagina_dinamica_placa_video.html" style="text-decoration: none;color: inherit;">
+                    <div class="product-header agdasima-regular">MSI NVIDIA GeForce RTX 3060 VENTUS 2X</div>
+                    <img src="../imagens/cards_home_lancamentos/placa_video/msi_rtx_3060.png" alt="Placa_Video">
+                    <div class="product-price">
+                        <h3 class="agdasima-regular">NVIDIA GeForce RTX 3060: LHR | 12GB GDDR6 | DLSS | Ray Tracing | 912-V397-664</h3>
+                        <span class="old-price agdasima-regular">R$ 3.229,99</span> <!-- Adicione o preço antigo se necessário -->
+                        <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                        <span class="new-price agdasima-regular">R$ 1.847,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 181,17 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                    </div>
+                </a>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+            
+            <!-- Adicione mais cards de produtos conforme necessário -->
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">AMD Ryzen 5 8500G </div>
+                <img src="../imagens/cards_home_lancamentos/processador/processador-amd-ryzen-5.jpg" alt="Processador">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">AMD Ryzen 5 8500G | 3.5GHz (5.0GHz Turbo) |
+                         6-Cores 12-Threads | AM5 | Cooler AMD Wraith Stealth<h3>
+                    <span class="old-price agdasima-regular">R$ 1.899,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 990,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 98,03 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <!--Podutos que estão na segunda fileira-->
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Gabinete Gamer Montech King 95 </div>
+                <img src="../imagens/cards_home_lancamentos/gabinete/gabinete-gamer-montech-king-95-argb-mid-tower-vidro-temperado-atx-black-sem-fonte-sem-fan_185230.jpg" alt="Gabinete">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">ARGB | Mid Tower | Vidro Temperado |
+                         ATX | Black | Sem Fonte | Sem Fan<h3>
+                    <span class="old-price agdasima-regular">R$ R$ 1.199,00</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 579,00 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 56,85 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+            
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Headset Gamer Redragon Zeus Pro </div>
+                <img src="../imagens/cards_home_lancamentos/headset/headset-gamer-redragon-zeus-pro-sem-fio-surround-71-black-h510-pro_182695.jpg" alt="Headset">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">Sem Fio | Bluetooth | Microfone Destacável |
+                         Surround 7.1 | Black | H510-PRO<h3>
+                    <span class="old-price agdasima-regular">R$ 749,90</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 419,00 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 41,17 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Fonte Corsair RM Series RM750 </div>
+                <img src="../imagens/cards_home_lancamentos/fontes/fonte-corsair-rm-series-rm750-750w-80-plus-gold-white-modular-pfc-ativo-cp-9020231-ww_142981.jpg" alt="Fontes">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">750W | 80 Plus Gold | White |
+                         Modular | PFC Ativo | CP-9020231-WW<h3>
+                    <span class="old-price agdasima-regular">R$ 1.699,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 879,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 86,27 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Notebook Acer Aspire 5 AMD Ryzen 5 5500U </div>
+                <img src="../imagens/cards_home_lancamentos/notebook/notebook-acer-aspire-5-amd-ryzen-5-5500u-8gb-ddr4-ssd-256gb-156-full-hd-amd-radeon-graphics-windows-11-home-prata-a515-45-r5at_212718.jpg" alt="Notebook2">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">8GB DDR4 | SSD 256GB | 15,6" Full HD |
+                         AMD Radeon Graphics | Windows 11 Home | Prata<h3>
+                    <span class="old-price agdasima-regular">R$ 4.679,99 </span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 2.999,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$  294,11  sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Microfone Gamer Fifine Ampligame A6T </div>
+                <img src="../imagens/cards_home_lancamentos/microfone/microfone-gamer-fifine-ampligame-a6t-rgb-usb-black-com-braco-articulado_169456.jpg" alt="Microfone">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">RGB, USB, Black, Com Braço Articulado<h3>
+                    <span class="old-price agdasima-regular">R$ 499,00</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 279,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 27,44 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-badge">Mais Vendidos</div>
+                <span class="neon-border"></span>
+            </div>
+            <!--Fileira 3-->
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Placa Mãe Biostar B560MX-E PRO </div>
+                <img src="../imagens/cards_home_lancamentos/placa_mae/placa-mae-biostar-b560mx-e-pro-chipset-b560-intel-lga-1200-matx-ddr4_134649.webp" alt="PlacaMae">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">Chipset B560 | Intel LGA 1200 | mATX |  DDR4<h3>
+                    <span class="old-price agdasima-regular">R$ 1.299,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 689,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 67,64 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Cooler DeepCool High Performance AK400 </div>
+                <img src="../imagens/cards_home_lancamentos/cooler/cooler-para-processador-deepcool-ak400-120mm-intel-amd-r-ak400-bknnmn-g-1_144162.jpg" alt="Cooler">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">120mm | Intel-AMD | R-AK400-BKNNMN-G-1<h3>
+                    <span class="old-price agdasima-regular">R$ 269,90</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 149,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 22,04 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-badge">Mais Vendidos</div>
+                <span class="neon-border"></span>
+            </div>
+            
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Monitor Samsung Odyssey G3 </div>
+                <img src="../imagens/cards_home_lancamentos/monitor/monitor-gamer-samsung-odyssey-g3-27-pol-full-hd-180hz-1ms-hdr-freesync-ls27dg300elxzd_210879.jpg" alt="Monitor">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">27 Pol | Full HD | 180Hz | 1ms | HDR |
+                         FreeSync | LS27DG300ELXZD<h3>
+                    <span class="old-price agdasima-regular">R$ 1.789,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 1520,65 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 126.72 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">SSD Adata Legend 710 </div>
+                <img src="../imagens/cards_home_lancamentos/ssd_hd/ssd-adata-legend-710-512gb-m2-2280-nvme-leitura-2400mbs-gravacao-1600mbs-aleg-710-512gcs_175586.jpg" alt="SSD">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">512GB | M.2 2280 NVMe Leitura 2.400MBs |
+                         Gravação 1.600MBs | ALEG-710-512GCS<h3>
+                    <span class="old-price agdasima-regular">R$ 419,90</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 254,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 24,99 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-badge">Mais Vendidos</div>
+                <span class="neon-border"></span>
+            </div>
+
+            <div class="product-card neon-card">
+                <div class="product-header agdasima-regular">Teclado Gamer SuperFrame Ribbon </div>
+                <img src="../imagens/cards_home_lancamentos/teclado/teclado-gamer-superframe-ribbon-wireless-rgb-switch-red-75-abnt2-hot-swap-sem-fio-whitegreen_198474.jpg" alt="Teclado">
+                <div class="product-price">
+                    <h3 class="agdasima-regular">Wireless RGB, Switch Red | 75% | ABNT | 
+                        Hot Swap | Sem Fio | White/Green<h3>
+                    <span class="old-price agdasima-regular">R$ 599,99</span> <!-- Adicione o preço antigo se necessário -->
+                    <span class="discount agdasima-regular">15% OFF</span> <!-- Adicione o desconto se necessário -->
+                    <span class="new-price agdasima-regular">R$ 329,90 à vista</span>
+                    <span class="installments agdasima-regular">ou 12x de R$ 32,34 sem juros</span> <!-- Ajuste as parcelas conforme necessário -->
+                </div>
+                <div class="buy-box">
+                    <button class="buy-button">Adicionar ao Carrinho</button>
+                </div>
+                <span class="neon-border"></span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Patrocinadores Games e Produtos-->
+    <section class="sponsors2">
+        <h2 class="agdasima-regular neon-text">COMPRE USANDO FOXNET15%</h2>
+        <div class="sponsor-grid2">
+            <div class="sponsor-box2">
+                <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/patrocinadores_games/cs.png" alt="Patrocinador_Games_1" class="imagem-destacada">
+                </a>
+            </div>
+            <div class="sponsor-box2">
+                <a href="https://store.steampowered.com/agecheck/app/1091500/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/patrocinadores_games/cyberpunk.jpg" alt="Patrocinador 2" class="imagem-destacada">
+                </a>
+            </div>
+            <div class="sponsor-box2">
+                <a href="https://store.steampowered.com/app/243470/Watch_Dogs/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/patrocinadores_games/watch dogs.jpg" alt="Patrocinador 3" class="imagem-destacada">
+                </a>
+            </div>
+            <div class="sponsor-box2">
+                <a href="https://store.steampowered.com/agecheck/app/2933620/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/patrocinadores_games/cod.jpg" alt="Patrocinador 4" class="imagem-destacada">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Patrocinadores-->
+    <section class="sponsors">
+        <h2 class="agdasima-regular">Patrocinadores</h2>
+        <div class="sponsor-grid">
+            <a href="https://www.gigabyte.com/" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/gigabyte.jpg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+            <a href="https://www.intel.com.br/content/www/br/pt/homepage.html" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/intel.jpg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+            <a href="https://br-store.acer.com/?srsltid=AfmBOoowi_6pEMQYTkTNDoyjXBxxio47Oi0dSv0maRarZzP670r8dxVG" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/acer.jpg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+            <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/microsoft-nvidea.jpeg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+            <a href="https://www.westerndigital.com/pt-br" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/Western_Digital_headpic.jpg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+            <a href="https://www.corsair.com/us/en" target="_blank" rel="noopener noreferrer">
+                <img src="../imagens/patrocinadores/corsair-logo.jpg" alt="Patrocinador 4" class="imagem-destacada">
+            </a>
+        </div>
+    </section>    
+
+    <!--Carossel Final Página-->
+    <div id="product-carousel-2" class="product-carousel-2-container">
+        <div class="product-carousel-2-wrapper">
+            <div class="product-carousel-2-slide">
+    
+                <!-- Card 1 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">SSD Kingston A400</div>
+                    <img src="../imagens/carrosel_final_pagina/kingstonssd.jpg" alt="SSD2" >
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">240GB | Sata III | Leitura 500MBs | Gravação 350MBs</h3>
+                        <span class="old-price agdasima-regular">R$ 309,99</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 169,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 22,21 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">AMD Radeon RX 580 2048SP</div>
+                    <img src="../imagens/carrosel_final_pagina/rx580.jpg" alt="rx580">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">8GB | GDDR5 | 256 Bit | VA5815RQ82</h3>
+                        <span class="old-price agdasima-regular">R$ 1299,90</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 799,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 78,42 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">Gigabyte GP-UD750GM PG5</div>
+                    <img src="../imagens/carrosel_final_pagina/fontegigabyte.jpg" alt="fonte">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">750W | 80 Plus Gold | PCIE 5.0 | 
+                            PFC Ativo | Full Modular | GP-UD750GM PG5</h3>
+                        <span class="old-price agdasima-regular">R$ 1199,99</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 769,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 75,48 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">Redragon Cobra V2</div>
+                    <img src="../imagens/carrosel_final_pagina/redragonmouse.jpg" alt="Mouse">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">RGB | 12400 DPI | 8 Botões Programáveis |
+                             Black | M711 V2</h3>
+                        <span class="old-price agdasima-regular">R$ 199,90</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 99,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 23,51 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">DDR4 Redragon Rage</div>
+                    <img src="../imagens/carrosel_final_pagina/ramredragon.png" alt="ramredragon">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">8GB | 3200Mhz | Red | GM-701</h3>
+                        <span class="old-price agdasima-regular">R$ 265,90</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 176,35 à vista</span>
+                        <span class="installments agdasima-regular">ou 8x de R$ 22,04 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">Redragon Magic Wand</div>
+                    <img src="../imagens/carrosel_final_pagina/tecladored.png" alt="tecladored">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">RGB | Switch Brown | ABNT2 |
+                             Branco Preto e Vermelho | Mecânico</h3>
+                        <span class="old-price agdasima-regular">R$ 439,90</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 269,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 26,46 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 7 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">Headset Havit H200D</div>
+                    <img src="../imagens/carrosel_final_pagina/havit.jpg" alt="fonehavit">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">3.5mm | Drivers de 53mm | Múltiplas Plataformas |
+                             Black/Green | HVGMH-H2002D-BN</h3>
+                        <span class="old-price agdasima-regular">R$ 299,90</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 189,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 11x de R$ 23,31 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 8 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">Asus TUF Gaming B450-Plus II</div>
+                    <img src="../imagens/carrosel_final_pagina/placamaeasus.png" alt="PlacaMaeAsus">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">Chipset B450 | AMD AM4 | 
+                            ATX | DDR4 | 90MB1650-M0EAY0</h3>
+                        <span class="old-price agdasima-regular">R$ 1799,99</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 699,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 5x de R$ 68,62 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+                <!-- Card 9 -->
+                <div class="product-card-carousel2 neon-card">
+                    <div class="product-header agdasima-regular">ASRock Phantom Gaming PG34WQ15R3A</div>
+                    <img src="../imagens/carrosel_final_pagina/monitorgamer.jpg" alt="MonitorGamer">
+                    <div class="product-price2">
+                        <h3 class="agdasima-regular">34 Pol | Curvo | WQuadHD | 1ms | 165Hz |
+                             115% sRGB | VA | HDR | FreeSync | HDMI/DP</h3>
+                        <span class="old-price agdasima-regular">R$ 4699,99</span>
+                        <span class="discount agdasima-regular">15% OFF</span>
+                        <span class="new-price agdasima-regular">R$ 3499,90 à vista</span>
+                        <span class="installments agdasima-regular">ou 12x de R$ 343,13 sem juros</span>
+                    </div>
+                    <span class="neon-border2"></span>
+                </div>
+    
+            </div>
+        </div>
+    
+        <button class="product-carousel-2-prev">&#10094;</button>
+        <button class="product-carousel-2-next">&#10095;</button>
+    </div>
+
+    <!--Roda-Pé-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Formas de Pagamento -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">FORMAS DE PAGAMENTO</h3>
+                <img src="../imagens/formas_de_pagamento/pix.png" alt="formas_de_pagamento">
+                <img src="../imagens/formas_de_pagamento/boleto-logo.png" alt="formas_de_pagamento">
+                <img src="../imagens/formas_de_pagamento/cartao.png" alt="formas_de_pagamento">
+                <!-- Adicione mais ícones conforme necessário -->
+            </div>
+            <!-- Segurança -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">SEGURANÇA</h3>
+                <a href="https://safebrowsing.google.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/imagens_rodape/SafeBrowsing_Icon.png" alt="SafeBrowsing" class="imagem-destacada">
+                </a>
+                <!-- Adicione mais ícones conforme necessário -->
+            </div>
+            <!-- Institucional -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">INSTITUCIONAL</h3>
+                <a class="agdasima-regular" href="../html/quem_somos.html">Quem somos</a>
+                <a class="agdasima-regular" href="#">Termos e Condições de Venda</a>
+                <a class="agdasima-regular" href="#">Política de Troca e Devoluções</a>
+                <!-- Adicione mais links conforme necessário -->
+            </div>
+            <!-- Dúvidas -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">DÚVIDAS</h3>
+                <a class="agdasima-regular" href="#">Como comprar</a>
+                <a class="agdasima-regular" href="#">Prazos e entregas</a>
+                <a class="agdasima-regular" href="#">Formas de Pagamento</a>
+                <!-- Adicione mais links conforme necessário -->
+            </div>
+            <!-- Cliente -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">CLIENTE</h3>
+                <a class="agdasima-regular" href="#">Minha conta</a>
+                <a class="agdasima-regular" href="#">Meus pedidos</a>
+                <a class="agdasima-regular" href="#">Meus cupons</a>
+            </div>
+            <!-- Ajuda -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">AJUDA</h3>
+                <a href="../html/fale_conosco.html" class="agdasima-regular">Fale Conosco</a>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="footer-section">
+                <h3 class="agdasima-regular">SIGA-NOS</h3>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/imagens_rodape/instagram.png" alt="SafeBrowsing" class="imagem-destacada">
+                </a>
+                <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="../imagens/imagens_rodape/discord.png" alt="SafeBrowsing" class="imagem-destacada">
+                </a>
+            </div>
+        </div>
+    </footer>    
+    
+    <!--Script Carrosel Final Página-->
+    <script>
+        const prevButton = document.querySelector('.product-carousel-2-prev');
+        const nextButton = document.querySelector('.product-carousel-2-next');
+        const carouselWrapper = document.querySelector('.product-carousel-2-wrapper');
+    
+        const totalCards = document.querySelectorAll('.product-card-carousel2').length;
+        const cardsPerSlide = 3; // Número de cards por slide
+        const totalSlides = Math.ceil(totalCards / cardsPerSlide); // Total de slides
+    
+        let currentSlide = 0;
+    
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides; // Navega para o próximo slide
+            carouselWrapper.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        });
+    
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Navega para o slide anterior
+            carouselWrapper.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        });
+    </script>
+    
+
+    
+
+    <!--Carossel Header-->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+        const indicators = document.querySelectorAll('.carousel-indicators button');
+
+        // Função para mostrar a imagem atual
+        function showImage(index) {
+        currentIndex = index; // Atualiza o índice atual
+        const offset = -index * 100; // Calcular o deslocamento para a imagem atual
+        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+
+        // Atualiza os indicadores
+        const indicators = document.querySelectorAll('.carousel-indicators button');
+        indicators.forEach((btn, i) => {
+            btn.classList.toggle('active', i === index);
+        });
+}
+
+
+        // Função para mudar para a próxima imagem
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages; // Incrementa o índice
+            showImage(currentIndex);
+        }
+
+        // Configura a transição automática a cada 6 segundos
+        setInterval(nextImage, 6000);
+
+        // Adiciona eventos de clique para os botões dos indicadores
+        indicators.forEach((btn, index) => {
+            btn.addEventListener('click', () => showImage(index));
+        });
+    </script>
+</body>
+</html>

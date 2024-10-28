@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ajusta para centralizar */
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    box-sizing: border-box;
+    padding-top: 100px;
+    
+}
+
+/*Efeitos Texto no Header*/
+.color-change {
+    color: #fff; /* Cor branca */
+    transition: color 0.3s ease-in-out;
+}
+.color-change:hover {
+    color: #F94318; /* Cor desejada */
+}
+
+/* Fonte */
+/* Classes para a fonte Agdasima */
+.agdasima-regular {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+}
+
+.agdasima-bold {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black; /* Adicione a cor de fundo para garantir que o conteúdo abaixo não seja visível através do cabeçalho */
+    z-index: 1000; /* Garantir que o cabeçalho fique acima de outros conteúdos */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex; /* Flexbox para alinhar horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    cursor: pointer; /* Mostra que o elemento é interativo */
+}
+
+.logo-img {
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.logo-container:hover .logo-img {
+    transform: scale(1.1) rotate(-10deg); /* Zoom + inclinação */
+    animation: swing 0.5s ease-in-out; /* Animação de balanço */
+}
+
+@keyframes swing {
+    0% { transform: scale(1.1) rotate(-10deg); }
+    50% { transform: scale(1.1) rotate(10deg); }
+    100% { transform: scale(1.1) rotate(-10deg); }
+}
+
+
+.logo-text {
+    margin-left: 10px; /* Espaço entre a logo e o texto */
+    font-size: 40px; /* Ajuste o tamanho da fonte */
+    color: #f4f4f4; /* Cor do texto */
+    font-family: 'Agdasima', sans-serif; 
+    font-weight: 400;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    max-height: 200px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+    white-space: nowrap;
+    z-index: 1000; /* Certifica-se de que o dropdown aparece acima de outros elementos */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    display: block;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a svg {
+    margin-right: 5px; /* Ajuste o espaço entre o ícone e o texto */
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #F94318; /* Altere para a cor desejada */
+    color: #fff; /* Altere a cor do texto, se necessário */
+}
+
+
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+.search-login input {
+    padding: 10px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-login a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.search-login .cart {
+    background-color: #F94318;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/*Efeito de rolagem*/
+section {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Quem Somos*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+  }
+  
+  /* Estilos comuns para missão e história */
+  .mission, .story {
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .story {
+    flex-direction: row-reverse; /* Imagem à esquerda, texto à direita */
+  }
+  
+  .mission .content, .story .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .mission .image-container, .story .video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mission .image-container img, .story .video-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* Títulos e parágrafos */
+  h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+
+
+
+/*Roda-Pé*/
+.footer {
+    width: 100%;
+    position: relative; 
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: -7px; /* Ajuste conforme necessário */
+    left: 0;
+    right: 0;
+    height: 10px; /* Altura da parte laranja */
+    background-color: #F94318; /* Fundo laranja */
+    z-index: -1; /* Para que o pseudo-elemento fique atrás do conteúdo */
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Efeito */
+.imagem-destacada {
+    transition: transform 0.3s ease; /* Suaviza a transição */
+}
+
+.imagem-destacada:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+}
