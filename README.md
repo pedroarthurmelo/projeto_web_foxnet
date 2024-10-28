@@ -26,7 +26,7 @@ Tecnologias Utilizadas
 Instalação
 
     Clone o repositório:
-    bash git clone https://github.com/gabrielti/projeto_web_foxnet
+    git clone https://github.com/gabrielti/projeto_web_foxnet
 
 Navegue até o diretório do projeto e abra os arquivos html em seu Navegador.
 
