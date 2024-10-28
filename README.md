@@ -28,7 +28,7 @@ Instalação
     Clone o repositório:
     git clone https://github.com/gabrielti/projeto_web_foxnet
 
-Navegue até o diretório do projeto e abra os arquivos html em seu Navegador.
+Navegue até o diretório do projeto, descompacte o imagens.zip e abra os arquivos html em seu navegador.
 
 Contribuição
 
