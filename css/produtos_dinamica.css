@@ -546,6 +546,48 @@ th, td {
     right: 10px;
 }
 
+.product-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.product-price {
+    margin: 15px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount {
+    color: #00970F;
+    font-weight: bold;
+}
+
+.new-price {
+    font-size: 24px;
+    color: #F94318;
+    font-weight: bold;
+}
+
+.installments {
+    color: #555;
+}
+
+
+
 /*Mais informações*/
 section {
     display: flex;
