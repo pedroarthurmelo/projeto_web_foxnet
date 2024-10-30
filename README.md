@@ -18,7 +18,7 @@ Tecnologias Utilizadas
 
     Frontend: HTML5, CSS3, JavaScript
 
-    Backend: MySQL
+    Backend: MySQL, PHP
 
     Banco de Dados: DBeaver
 
