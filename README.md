@@ -28,7 +28,31 @@ Instalação
     Clone o repositório:
     git clone https://github.com/gabrielti/projeto_web_foxnet
 
-Navegue até o diretório do projeto, descompacte o imagens.zip e abra os arquivos html em seu navegador.
+Navegue até o diretório do projeto, descompacte o imagens.zip e abra os arquivos html em seu navegador. Siga as instruções readme dentro das páginas dinâmicas.
+
+Requisitos do Sistema(Trabalho):
+
+    Múltiplas Páginas:
+        O site deve conter no mínimo 3 páginas. Exemplos: -> FEITO 
+
+    Banco de Dados: -> FEITO BANCOS: usuario_db, memoria_ram_db e placa_video_db
+        A aplicação deve utilizar um banco de dados com no mínimo 3 tabelas.
+        Opcional: Se uma tabela fizer referência a outra (chave estrangeira) ou se houver uma tabela de relacionamento, será levado em conta.
+
+    API RESTful: -> FEITO NA PÁGINA CADASTRO O ENVIO DO FORMULÁRIO E CONSULTA SE O CADASTRO JÁ EXISTE NO SISTEMA
+        O sistema deve conter uma API que suporte métodos GET ou POST.
+        Esta API será usada para:
+            Recuperar dados do banco.
+            Escrever dados no banco.
+        A interface da aplicação deve interagir com essa API, permitindo:
+            Cadastro de dados (escrita no banco via API).
+            Consulta de dados (leitura do banco via API).
+
+    Estilização com CSS: -> FEITO
+        O site deve ser visualmente agradável, com uma estilização apropriada utilizando CSS.
+
+    Tecnologia do Backend: -> FEITO
+        O backend pode ser desenvolvido em PHP (preferencialmente) ou em outra tecnologia de sua escolha.
 
 Contribuição
 
